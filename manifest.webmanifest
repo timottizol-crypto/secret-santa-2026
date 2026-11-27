@@ -1,0 +1,21 @@
+{
+  "id": "./",
+  "name": "Тайный Санта 2026",
+  "short_name": "Тайный Санта",
+  "description": "Новогодняя жеребьёвка Тайного Санты",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#071b17",
+  "theme_color": "#071b17",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
