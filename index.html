@@ -242,7 +242,7 @@ track.style.transition="none";track.style.transform="translateY(0)";track.innerH
 const spinNames=Array.from({length:34},()=>NAMES[Math.floor(Math.random()*NAMES.length)]);
 spinNames.push(winner);const winnerIndex=spinNames.length-1;spinNames.push(NAMES[Math.floor(Math.random()*NAMES.length)]);
 track.classList.remove("revealed");
-spinNames.forEach(value=>{const item=document.createElement("div");item.className="reel-item";item.textContent=value;track.append(item)});
+spinNames.forEach((value,index)=>{const item=document.createElement("div");item.className="reel-item";if(index===winnerIndex)item.classList.add("winner");item.textContent=value;track.append(item)});
 windowEl.classList.remove("stopped","spinning");show("resultScreen");void windowEl.offsetWidth;
 const items=Array.from(track.children);let reelFrame=0;
 const updateCenter=()=>{
